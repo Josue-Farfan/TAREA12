@@ -2,7 +2,7 @@ package UT5_TAREA12;
 
 import java.util.Objects;
 
-public class Vuelo implements Comparable<Vuelo>{
+public abstract class Vuelo implements Comparable<Vuelo>{
 
     private String destino;
     private String modeloAvion;
@@ -61,7 +61,16 @@ public class Vuelo implements Comparable<Vuelo>{
 
     @Override
     public int compareTo(Vuelo o) {
-        return destino.compareTo(o.destino);
+        if (this.destino.compareTo(o.destino) == 0) {
+            if (this.modeloAvion.compareTo(o.modeloAvion) == 0){
+                if (this.plazas == o.plazas){
+                    return 0;
+                }
+                return (this.plazas- o.plazas);
+            }
+            return (this.modeloAvion.compareTo(o.modeloAvion));
+        }
+        return (this.destino.compareTo(o.destino));
     }
 
     @Override

@@ -18,7 +18,7 @@ public class Regular extends Vuelo {
 
     @Override
     public String toString() {
-        return "Destino: " + getDestino() + "\nModelo de avión: " + getModeloAvion()
+        return "VUELO REGULAR\n-------------\nDestino: " + getDestino() + "\nModelo de avión: " + getModeloAvion()
                 + "\nPlazas totales: " + getPlazas() + "\nPlazas libres: " + plazasLibres+"\n";
     }
 }

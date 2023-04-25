@@ -18,7 +18,7 @@ public class Charter extends Vuelo{
 
 
     public String toString(){
-        return "Vuelo CHARTER\nDESTINO: " +getDestino()+ "\nMODELO DE AVION: "+getModeloAvion()
+        return "Vuelo CHARTER\n-------------\nDESTINO: " +getDestino()+ "\nMODELO DE AVION: "+getModeloAvion()
        + "\nPLAZS: "+getPlazas()+ "\nNIF EMPRESA: " +getNifEmpresaContratadora()+"\n";
     }
 
